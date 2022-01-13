@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow </title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid red ; */
+        background-color: rgb(240, 223, 210);
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y  blur radius color; */
+        /* box-shadow: offset-x offset-y  blur radius  spread radius color; */
+        /* box-shadow: 5px 5px grey; */
+        box-shadow: inset 3px 5px yellow ;
+        /* box-shadow: 7px 5px 10px 8px rgba(201, 61, 145, 0.7); alpha is for darkness */
+        box-shadow: 5px 5px grey,3px 6px red;
+
+    }
+    #card-1{
+        background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png')no-repeat center center/cover ;
+        color: rgb(91, 236, 62);
+    }
+    #card-2{
+        background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png') no-repeat center center/cover;
+    }
+    #card-3{
+        background: url('https://images.idgesg.net/images/article/2019/05/java_binary_code_gears_programming_coding_development_by_bluebay2014_gettyimages-1040871468_2400x1600-100795798-large.jpg?auto=webp&quality=85,70') no-repeat center center/cover;
+        color: rgb(235, 27, 44);
+    }
+    .card h2{
+        /* text-shadow: 3px 2px rgb(174, 156, 236) ; */
+        text-shadow: -3px  -2px rgb(174, 156, 236) ;
+    }
+</style>
+<body>
+    <div class="container">
+<div class="card" id="card-1">
+    <h2>This is C++ course </h2>
+    <p>C++ (pronounced "see plus plus") is a computer programming language based on C. It was created for writing programs for many different purposes. In the 1990s, C++ became one of the most used programming languages in the world.The C++ programming language was developed by Bjarne Stroustrup at Bell Labs in the 1980s, and was originally named "C with classes". The language was planned as an improvement on the C programming language, adding features based on object-oriented programming. Step by step, a lot of advanced features were added to the language, like operator overloading, exception handling and templates.</p>
+</div>
+<div class="card" id="card-2">
+    <h2>This is HTML course </h2>
+    <p>
+        HyperText Markup Language (HTML) is a type of markup language. It is used to make webpages. Webpages can include writing, links, pictures, and even sound and video. HTML tells web browsers what webpages should look like. HTML also adds meta information to webpages. Meta information is information about about a webpage e.g., the name of the person who created the page. Web browsers usually do not show meta information.HTML is often used with Cascading Style Sheets (CSS) and JavaScript. CSS is used to change the way HTML looks. JavaScript tells websites how to behave. It can also change HTML and CSS.</p>
+</div>
+<div class="card" id="card-3">
+    <h2>This is JAVA course </h2>
+    <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. As of 2019, Java was one of the most popular programming languages in use according to GitHub,particularly for client-server web applications, with a reported 9 million developers.</p>
+</div>
+
+    </div>
+</body>
+</html>

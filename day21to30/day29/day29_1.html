@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid </title>
+    <style>
+        body {
+            background-image: url(https://www.wockhardthospitals.com/wp-content/uploads/2021/01/NEVER-feel-guilty-about-whatever-be-the-case.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+            
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 300px 100px 100px;
+            /* grid-template-columns: 300px auto 100px; */
+            /* grid-template-columns: 300px auto 100px; */
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-columns: repeat (3, auto);
+            
+
+        }
+
+        .item {
+            color: rgb(3, 3, 3);
+            margin: 2px;
+            background-color: rgb(235, 212, 202);
+            /* height: 100px;
+            width: 100px; */
+            padding: 5px;
+            opacity: 0.5;
+        }
+
+        h1 {
+
+            color: rgb(219, 83, 29);
+            text-align: center;
+        }
+        h3,p{
+            color: rgb(19, 22, 19);
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <h1>Human Nature</h1>
+    <p >Human nature is a concept that denotes the fundamental dispositions and characteristics—including ways of
+        thinking, feeling, and acting—that humans are said to have naturally.The term is often used to denote the essence of humankind, or what it 'means' to be human. This usage has proven to be controversial in that there is dispute as to whether or not such an essence actually exists.<br>
+    some of these  are :-</p>
+    <div class="container">
+        <div class="item">
+            <h3>Emotions</h3>
+            <p> Emotions are psychological states brought on by neurophysiological changes, variously associated with thoughts, feelings, behavioural responses, and a degree of pleasure or displeasure</p>
+        </div>
+        <div class="item">
+            <h3>Rebellion</h3>
+            <p>Rebellion occurs when you change your behavior or routine – altering the boundaries of your life in a way that can be seen as drastically different. This change can be positive or negative. It's negative if it harmfully interferes with your day-to-day functioning by causing you to: Act inappropriately</p>
+        </div>
+        <div class="item">
+            <h3>chaos</h3>
+            <p>We are incredibly ordered on several scales of magnitude, but irregularly so. Our bodies conform to a set of non-linear, dynamic rules. The human body is not a simple machine, but an amazingly complex chaotic system.</p>
+        </div>
+        <div class="item">
+            <h3>hard times</h3>
+            <p>Human being met  with hard times  at every corner of life sometimes it may be  the financial ,sometimes it may be personal ,At the current scenario most of the  humans had  already faced hard times by struggling with <b>COVID-19</b>.Some of them had lost their loved ones and most of the humans had faced financial Bankruptcy  </p>
+        </div>
+        <div class="item">
+            <h3>work for what we want</h3>
+           <p>In this materialistic world  we need everything which we want and for that  some humans worked so hard  and fulfill their their dreams on their own,</p>
+        </div>
+        <div class="item">
+            <h3> Self-Image</h3>
+            <p>Self-image is the personal view, or mental picture, that we have of ourselves. Self-image is an “internal dictionary” that describes the characteristics of the self, including such things as intelligent, beautiful, ugly, talented, selfish, and kind.</p>
+        </div>
+        
+    </div>
+</body>
+
+</html>

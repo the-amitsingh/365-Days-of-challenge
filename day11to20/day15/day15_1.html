@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: green;
+            height: 3444px;
+        }
+
+        /* CSS position :static(default),absolute,relative,fixed,sticky */
+        .box {
+            display: inline-block;
+            border: 2px solid rgb(248, 1, 1);
+            width: 120px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* relative:position the element relative to its normal position  and will leave a gap at its normal position   */
+            /* position: relative; */
+             
+            /* relative:position the element relative to the  position of its first parent   */
+            /* position: absolute; */
+            /* 
+            top: 34px;
+            left: 34px; */ 
+            /* fixed:position the element relative to the browser window */
+             /* position: fixed;
+            right: 4px;
+            bottom: 2px;  */
+
+            /* sticky */
+              position: sticky;
+              top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</div>
+</body>
+
+</html>

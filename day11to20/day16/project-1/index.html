@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amit's kitchen </title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset   */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: rgb(2, 81, 250);
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-size: auto;
+
+    }
+
+    .left {
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+        font-size: 24px;
+
+    }
+
+    .left img {
+        width: 120px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .center {
+        display: block;
+        width: 40%;
+        margin: 29px auto;
+        /* border: 2px solid black; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid rgb(8, 224, 8);     */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        color: red;
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: rgb(252, 250, 250);
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: rgb(223, 113, 113);
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        background-color: black;
+        color: blanchedalmond;
+        margin: 0px 20px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(212, 91, 91);
+    }
+
+    .container {
+        border: 2px solid red;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block ;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black ;
+        margin: 11px auto ;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo  -->
+        <div class="left">
+            <img src="img/logo1.png" alt="">
+            <div>amit's kitchen </div>
+
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="center">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">About us </a> </li>
+                <li> <a href="#">your order</a> </li>
+                <li> <a href="#">support</a> </li>
+                <li> <a href="#">search your dish here </a> </li>
+
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">track your order </button>
+            <button class="btn"> call us </button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>VEGETARIAN FOOD</h1>
+        <form action="noaction.php">
+            <div class="form-group" img src="img/paneer kabab.jpg">
+                <input type="text" name="" placeholder="paneer tikka">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="chhole bhature">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="paneer do pyaza">
+            </div>
+            <button class="btn">place your order </button>
+        </form>
+    </div>
+   s
+    <div class="container">
+        <h1>NON-VEGETARIAN FOOD</h1>
+        <form action="noaction.php">
+            <div class="form-group" img src="img/paneer kabab.jpg">
+                <input type="text" name="" placeholder="fried chicken ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="mutton handi ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="mutton korma">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="fried fish ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="chicken biryani  ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="mutton biryani  ">
+            </div>
+
+            <button class="btn">place your order </button>
+        </form>
+    </div>
+    
+
+</body>
+
+</html>

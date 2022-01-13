@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: salmon;
+        }
+        .container {
+            background-color: green;
+            border: 3px solid red;
+           /* we can set margin ,padding top,padding bottom ,padding left like this */
+            /* padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 9px;*/
+            /* margin-top: 3px;
+            margin-bottom: 30px;
+            margin-right: 13px;
+            margin-left: 10px; */
+
+
+            padding :56px 10px 25px 10px; /* padding /maargin =top right bottom left ; */
+            /* padding: y(top/bottom) x    x(left /right ); */
+            /* margin: y(top/bottom) x    x(left /right ); */
+            margin: 34px 19px;
+            border-radius: 23px;
+            width: 522px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>this is my heading </h3>
+        <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nostrum temporibus neque
+            distinctio nemo ut quasi rem ipsa ea veritatis, quo tempora veniam nihil porro sed atque possimus dolorum
+            ratione.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading </h3>
+        <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nostrum temporibus neque
+            distinctio nemo ut quasi rem ipsa ea veritatis, quo tempora veniam nihil porro sed atque possimus dolorum
+            ratione.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading </h3>
+        <p id="third">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nostrum temporibus neque
+            distinctio nemo ut quasi rem ipsa ea veritatis, quo tempora veniam nihil porro sed atque possimus dolorum
+            ratione.</p>
+    </div>
+</body>
+
+</html>

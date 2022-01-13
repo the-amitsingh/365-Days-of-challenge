@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Before and after pseudo selector </title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Pushster&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: rgb(56, 192, 79);
+            font-size: 20px;
+        }
+
+        /* to manage the font opacity and clear background image  */
+        header::before {
+            content: "";
+            background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /*to show the content in  at the place  */
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+
+        .navigation {
+            font-family: 'Baloo Bhai 2', cursive;
+
+            font-size: 40px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::before{
+             content: "welcome to my Blog content ";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home </li>
+                <li class="item">About </li>
+                <li class="item">Services </li>
+                <li class="item">Contact us </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Coding World </h3>
+        <p> Coding theory is the study of the properties of codes and their respective fitness for specific
+            applications. Codes are used for data compression, cryptography, error detection and correction, data
+            transmission and data storage. Codes are studied by various scientific disciplines—such as information
+            theory, electrical engineering, mathematics, linguistics, and computer science—for the purpose of
+            designing efficient and reliable data transmission methods. This typically involves the removal of
+            redundancy and the correction or detection of errors in the transmitted data. <br>
+            There are four types of coding: <br>
+            1.Data compression (or source coding). <br>
+            2.Error control (or channel coding) <br>
+            3.Cryptographic coding <br>
+            4.Line coding <br>
+            Data compression attempts to remove redundancy from the data from a source in order to transmit it more
+            efficiently. For example, ZIP data compression makes data files smaller, for purposes such as to reduce
+            Internet traffic. Data compression and error correction may be studied in combination. <br>
+            Error correction adds extra data bits to make the transmission of data more robust to disturbances
+            present on the transmission channel. The ordinary user may not be aware of many applications using error
+            correction. A typical music compact disc (CD) uses the Reed–Solomon code to correct for scratches and
+            dust. In this application the transmission channel is the CD itself. Cell phones also use coding
+            techniques to correct for the fading and noise of high frequency radio transmission. Data modems,
+            telephone transmissions, and the NASA Deep Space Network all employ channel coding techniques to get the
+            bits through, for example the turbo code and LDPC codes.</p>
+    </section>
+
+</body>
+
+</html>
