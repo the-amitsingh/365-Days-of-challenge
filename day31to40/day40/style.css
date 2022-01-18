@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  background-color: lavender;
+}
+
+.content-card {
+  background-color: #ffffff;
+  width: 90%;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  border-radius: 15px;
+}
+
+.content-card img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.content-card .content-text {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  padding: 1em;
+}
+
+.content-card .content-text h1 {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--very-dark-grayish-blue);
+}
+
+.content-card .content-text p {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--desaturated-dark-blue);
+}
+
+.content-card .content-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.content-card .content-footer.on {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.content-card .content-footer .content-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.content-card .content-footer .content-profile img {
+  border-radius: 150px;
+}
+
+.content-card .content-footer .content-profile .content-info {
+  padding: 0.5em;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8rem;
+}
+
+.content-card .content-footer .content-profile .content-info p {
+  margin: 0;
+  color: var(--very-dark-grayish-blue);
+}
+
+.content-card .content-footer .content-profile .content-info span {
+  color: var(--grayish-blue);
+}
+
+.content-card .content-footer .content-profile img {
+  width: 20%;
+}
+
+.content-card .content-footer .content-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  gap: 0.5em;
+  margin-left: 1em;
+  width: 50%;
+}
+
+.content-card .content-footer .content-socials span {
+  font-family: "Manrope", sans-serif;
+  color: var(--grayish-blue);
+  min-width: 50px;
+  font-size: 0.7rem;
+}
+
+.content-card .content-footer .content-socials .icon {
+  font-size: 1.2rem;
+  padding: 0.5em;
+}
+
+.content-card .content-footer .content-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1.5em;
+  width: 65%;
+}
+
+.content-card .content-footer .content-btn .btn {
+  display: block;
+  padding: 0.5em;
+  background-color: var(--light-grayish-blue);
+  border-radius: 150px;
+}
+
+.content-card .content-footer.on .content-btn .btn {
+  background-color: var(--desaturated-dark-blue);
+}
+
+.content-card .content-footer.on .content-btn .btn svg path {
+  fill: #fff;
+}
+
+.content-card .content-footer.on .content-btn {
+  width: 40%;
+}
+
+.content-card .content-footer.on .content-profile {
+  display: none;
+}
+
+.content-card .content-footer.off .content-socials {
+  display: none;
+}
