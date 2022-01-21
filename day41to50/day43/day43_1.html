@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <div class="container">
+        This is about Loops in javascript
+    </div>
+    <script>
+        console.log("we are studying loops in js");
+        // let i=0;
+        // for (i=0;i<3;i++){
+        //     console.log(i);
+        // }
+        let friends = ["rohan", "kavya", "mrinal", "Aditi"];
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log("Hello friend,"+ friends[index]) ;
+        // }
+        // friends.forEach(function f(element){
+        // console.log("Hello friend,"+element +" welcome to modern javascript");
+        //    });
+for (element of friends){
+    console.log("Hello Friend,"+element +" welcome to modern javascript")
+}
+let employee = {
+    name: "Amit",
+    salary:100000,
+        company:"microsoft"
+}
+// use this loop to iterate over object in javascript
+for (key in employee){
+    console.log(`The ${key} of an employee is ${employee[key]}`);
+}
+// while loop in javascript
+
+i=0;
+while(i<4){
+    console.log(`${i} is less than 4 `);
+    i++;
+}
+// do while loop in javascript
+
+j=35;
+do{
+console.log(`${j} is greater  than 4 `);
+j++;
+}
+while(j<4);
+
+    </script>
+</body>
+
+</html>
