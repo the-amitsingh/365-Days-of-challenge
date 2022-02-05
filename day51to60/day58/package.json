@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "slugify": "^1.6.5"
+  }
+}
