@@ -8,49 +8,49 @@ const proto = {
         this.name = newName
     }
 }
+/*
 // This creates harry object
-let harry = Object.create(proto);
-harry.name = "harry";
-harry.role = "Programmer";
-// harry.changeName("Harry2")
-// console.log(harry)
-
+const Amit = Object.create(proto);
+Amit.name = "Amit ";
+Amit.role = "Programmer";
+*/
 // This also creates harry object
-const harry1 = Object.create(proto, {
-    name: { value: "harry", writable: true },
-    role: { value: "Programmer" },
-});
-harry1.changeName("Harry2")
-// console.log(harry1)
+const Amit = Object.create(proto , {
+    name:{value: "Amit ",writable:true},
+    role:{ value:"programmer"},
+})
 
+Amit.changeName("Ankit ")
+console.log(Amit);
 
-// Employee constructor
-function Employee(name, salary, experience) {
-    this.name = name;
-    this.salary = salary;
-    this.experience = experience;
+//employee contructor
+function employee(name, salary ,experience){
+    this.name=name;
+    this.salary=salary;
+    this.experience=experience;
 }
 
-// Slogan
-Employee.prototype.slogan = function () {
-    return `This company is the best. Regards, ${this.name}`;
+//slogan
+employee.prototype.slogan =function(){
+    return `This company is the best. Regards ${this.name}`;
+}
+let Amitobj = new employee("Amit",84512,52);
+console.log(Amitobj);
+console.log(Amitobj.slogan());
+
+//programmer
+function programmer(name,salary,experience,language){
+    employee.call(this,name,salary,experience)
+    this.language=language;
 }
 
-// Create an object from this constructor now
-let harryObj = new Employee("Harry", 345099, 87);
-console.log(harryObj.slogan())
+//inherit  the prototype
+programmer.prototype = Object.create(employee.prototype);
 
-// Programmer
-function Programmer(name, salary, experience, language) {
-    Employee.call(this, name, salary, experience);
-    this.language = language;
-}
+//manually set the constructor 
+programmer.prototype.constructor = programmer;
 
-// Inherit the prototype
-Programmer.prototype = Object.create(Employee.prototype);
+let Rohan =new programmer("Rohan",2,0,"javascript");
+console.log(Rohan);
 
-// Manually set the constructor
-Programmer.prototype.constructor = Programmer;
 
-let rohan = new Programmer("Rohan", 2, 0, "Javascript");
-console.log(rohan);
