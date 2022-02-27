@@ -2,6 +2,7 @@ console.log('Arrow function ');
 
 // ARROW FUNCTIONS
 
+
 // Creating a regular function
 const harry = function (){
     console.log("This is the best person ever")
