@@ -1,4 +1,4 @@
-console.log("This is tutorial 44");
+console.log("Error Handling & Try Catch in Javascript");
 
 // Pretend this is coming from a server as response
 let a = "Amit  bhai ";
