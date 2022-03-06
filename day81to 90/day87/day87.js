@@ -1,4 +1,4 @@
-console.log("This is tutorial 49");
+console.log("Shorthand character classes (Regular Expressions) ");
 
 // Character classes
 let regex = /\war/;     //word character - _ or alphabet or numbers
