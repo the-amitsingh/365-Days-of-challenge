@@ -3,14 +3,11 @@ const path =require("path");
 const app = express();
 const port = 80;
 
-//For serving static files
-app.use('/static',express.static('static'))
+app.use('/static',express.static('static'))  //For serving static files
 
-//set the template engine as pug
-app.set('view engine', 'pug')
+app.set('view engine', 'pug')    //set the template engine as pug
 
-//set the view directory 
-app.set('views',path.join(__dirname,'views'))
+app.set('views',path.join(__dirname,'views'))   
 
 //our pug demo endpoint
 app.get("/demo",(req,res)=>{
