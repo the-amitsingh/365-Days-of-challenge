@@ -13,7 +13,7 @@ app.set('views',path.join(__dirname,'views'))  //set the view directory
 app.get('/',()=>{
     const con = "This is the best content on the internet so far so use it wisely "
     const params = {'title':'pubg is the best game ',content:con}
-    res.status(200).render('index.pug');
+    res.status(200).render('index.pug',params);
 })
 
 //START THE SERVER 
