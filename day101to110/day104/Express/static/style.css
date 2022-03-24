@@ -20,10 +20,20 @@ a{
     color: rgb(0, 7, 7);
     font-weight: bold;
 }
-h1{
+h2{
     text-align: center;
 }
 .container{
+    background: '   ';
     margin: 12px;
     background-color: yellow;
+}
+input , textarea{
+    display: block;
+    padding: 2px;
+    margin: 14px auto;
+    width: 60%;
+    outline: none;
+    border: 2px solid black ;
+    border-radius: 8px;
 }
