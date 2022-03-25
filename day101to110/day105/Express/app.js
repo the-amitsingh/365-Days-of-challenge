@@ -11,8 +11,7 @@ app.set('views',path.join(__dirname,'views'))  //set the view directory
 
 //ENDPOINTS
 app.get('/',(req,res)=>{
-    const con = "This is the best content on the internet so far so use it wisely "
-    const params = {'title':'pubg is the best game ',content:con}
+    const params = {}
     res.status(200).render('index.pug',params);
 })
 
