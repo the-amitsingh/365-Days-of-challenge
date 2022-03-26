@@ -5,13 +5,23 @@ html
     style
         include ../static/style.css
 
-  body 
+  body
     nav#navbar
-        ul 
-        li home 
-        li About 
-        li services 
-        li contact us 
-        li class info  
+        ul
+            div#logo
+                
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+        section#introsection 
+        |section for picture 
+
+        section#sponsorssection 
+        |section for sponsors 
+
+        footer#footer
+        |our footer here 
     script 
       include ../static/index.js
