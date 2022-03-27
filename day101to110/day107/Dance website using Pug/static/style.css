@@ -29,16 +29,30 @@
 #introsection{
     color:white;
     display: flex;
-    background: center/contain no-repeat url("/static/bg.jpg");
-height: 300px;
+    background: center/cover no-repeat url("/static/bg.jpg");
+height: 425px;
 background-color: red;
 font-family: 'Palette Mosaic', cursive;
 justify-content: center;
 align-items: center;
 }
-#sponsorssection{
+#missionsection {
     height: 300px;
     background-color: blue;
+}
+#sponsorssection{
+    height: 300px;
+    background-color:antiquewhite;
+}
+#sponsorssection h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 12px;
+}
+#missionsection h2{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 12px;
 }
 #footer{
     background-color: black;
