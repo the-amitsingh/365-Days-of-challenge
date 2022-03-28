@@ -20,6 +20,7 @@
 #navbar li{
     list-style: none;
 }
+
 #navbar li a{ 
     color: bisque;
    text-decoration: none;
