@@ -6,6 +6,19 @@
     font-family: 'Outfit', sans-serif;
     text-align: center;
 }
+#logo{
+    display: flex;
+    align-items: center;
+    margin: 0px 12px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+#logo img{
+    height: 40px;
+    color: white;
+    
+}
+
 #navbar{
     background-color: #d43b3b;
     font-family: 'Outfit', sans-serif;
@@ -14,7 +27,7 @@
 #navbar ul{
     display: flex;
     flex-direction: row;
-     justify-content: center;
+     /* justify-content: center; */
     align-items: center;
 }
 #navbar li{
@@ -77,7 +90,19 @@ align-items: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 5px;
     }
-
+    .card-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-img{
+        height: 131px;
+        padding: 0 14px;
+        margin: 5px 9px;
+    }
+    .card-img img{
+        height: inherit; 
+    }
 #footer{
     background-color: black;
     height: 100px;
