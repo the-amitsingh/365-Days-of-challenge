@@ -74,7 +74,7 @@ align-items: center;
     padding-top: 12px;
 }
 .card{
-   
+   display: flex;
         border: 2px solid black;
         border-radius: 10px;
         width: 30%;
