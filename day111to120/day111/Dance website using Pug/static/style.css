@@ -67,6 +67,11 @@ align-items: center;
     text-align: center;
     padding-top: 12px;
 }
+#sponsors{
+    height: 120px;
+    max-width: 100px;
+    margin: auto;
+}
 #missionSection h2{
     font-size: 42px;
     font-family: 'Yeon Sung' ;
@@ -110,6 +115,7 @@ align-items: center;
     .card-img img{
         height: inherit; 
     }
+    
 #footer{
     background-color: black;
     height: 100px;
