@@ -1,0 +1,15 @@
+{
+  "name": "dance-website-using-pug",
+  "version": "1.0.0",
+  "description": "this is  a popular dance",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amit singh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "pug": "^3.0.2"
+  }
+}
