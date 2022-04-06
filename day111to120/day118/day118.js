@@ -11,4 +11,6 @@ db.items.find()
 //To update an object in the list 
 db.items.updateOne ({name:"iphone 20+"},{$set: {price:2}})
 db.items.find()
+
+//To update many elements of an object 
 db.items.updateMany ({name:"iphone 20+"},{$set: {price:4,rating: 1}})
