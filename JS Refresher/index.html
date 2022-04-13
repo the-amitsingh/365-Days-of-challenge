@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let a =23;
+        // let a ='this is amit ';
+        // const a = 45;
+        let a = 45;
+        a = 4554 + 5;
+        console.log(a);
+        // Numbers
+        // object 
+        // Boolean -True or false 
+        // string 
+        // undefined 
+        // null 
+         function hello (){
+             console.log("Hey Amit ");
+         }
+         let obj = {
+             r:78,
+             m:65,
+             func: function myfunc(number) {
+                 console.log("The number is "+ number);
+             }
+         }
+        document.addEventListener("click",function click(){
+            console.log("you have been clicked ");
+            // alert("are you sure ")
+            let conf = confirm ("do you really want to click ?");
+            console.log(conf);    
+        })
+        let arr= [12,22,45];
+        console.log(this);
+        // function myfunc(number) {
+        //     console.log("The number is "+ number);
+        // }
+        // myfunc();
+        let mobj = {
+            a:this,
+            myfunc : function(number){
+                console.log(this);
+            }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(() => {
+            console.log("hello time-out ")
+        },3000);
+        console.log("time-out message ");
+
+
+    </script>
+</head>
+
+<body>
+    I am learning JS.
+
+</body>
+
+</html>
