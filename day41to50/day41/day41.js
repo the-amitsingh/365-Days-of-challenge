@@ -21,11 +21,11 @@ let greetText = "Good Morning"
 greet(name , greetText);
 greet(name1 , greetText);
 greet(name2 , greetText);
-// let returnval=greet(name3 );
-// console.log(returnval)
+let returnval=greet(name3 );
+console.log(returnval)
 
-let returnval= sum(4,5,6);
-console.log(returnval);
+// let returnval= sum(4,5,6);
+// console.log(returnval);
 
 
 // console.log(name +" is a good boy ");
